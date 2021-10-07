@@ -8,7 +8,7 @@ This demo uses a mix of public and private actions to create a repository in the
 
 ### Create a new issue
 
-1. In the repository, go to **Issues** and create a new issue based on the template
+1. In this repository, go to **Issues** and create a new issue based on the template
 1. Update the `name` and `description` fields
     - :exclamation: The issue body must be `yml` compliant, do not change the indentation 
 1. Click **Submit new issue**, this should trigger the workflow
