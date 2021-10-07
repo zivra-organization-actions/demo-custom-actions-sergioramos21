@@ -23,6 +23,7 @@ This demo uses a mix of public and private actions to create a repository in the
     - Public action used to retrieve the GitHub App authentication token used for checking out private actions
     - Private actions checked out separately
     - Public action used for creating issue comments
+    - Show the private actions used by the workflow (`action.yml` file, libraries used, ...)
 
 ### Cleanup
 
