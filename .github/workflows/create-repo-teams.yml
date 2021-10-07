@@ -35,9 +35,9 @@ jobs:
           admin_token: ${{ steps.github_app.outputs.app_token }}
 
       - name: Greetings for the users submitting issues to this repository
-        uses: actions/github-script@0.9.0
+        uses: actions/github-script@v4
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.issues.createComment({
               issue_number: context.issue.number,
@@ -66,10 +66,10 @@ jobs:
           repository_name: ${{ steps.parser.outputs.name }}
           admin_token: ${{ steps.github_app.outputs.app_token }}
 
-      - uses: actions/github-script@0.9.0
+      - uses: actions/github-script@v4
         name: Report created elements
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.issues.createComment({
               issue_number: context.issue.number,
