@@ -19,6 +19,7 @@ jobs:
           APP_PEM: ${{ secrets.APP_PRIVATE_KEY }}
           APP_ID: ${{ secrets.APP_ID }}
 
+      # Check out a private action to parse the issue body
       - name: Checkout the issue parser action
         id: checkout_issue_parser
         uses: actions/checkout@v2
@@ -50,6 +51,7 @@ jobs:
               `
             })
 
+      # Check out the private action used to create a new repository
       - name: Check out the repo creator action
         uses: actions/checkout@v2
         id: checkout_repo_creator
