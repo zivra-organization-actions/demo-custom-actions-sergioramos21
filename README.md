@@ -4,6 +4,9 @@ Demo repository for using custom actions in a workflow.
 
 This demo uses a mix of public and private actions to create a repository in the organization from a new issue. For the private actions, a GitHub App token is used to authenticate since the `GITHUB_TOKEN` is scoped to the workflow repo only.
 
+:exclamation: **This demo should be run from within this repository to avoid errors related to GitHub App credentials etc.**
+- Please make sure to complete the **Cleanup** steps afterwards :house_with_garden:
+
 ## Usage 
 
 ### Create a new issue
@@ -26,9 +29,8 @@ This demo uses a mix of public and private actions to create a repository in the
     - Public action used for creating issue comments
     - Show the source code of the private actions used by the workflow (`action.yml` file, `index.js`, libraries used, ...)
 
-### Cleanup
+### :house_with_garden: Cleanup
 
-1. If the workflow was run in this repository, perform the following steps:
-    - Delete the new repository that was created
+1. Delete the new repository that was created
 1. :exclamation: Do not delete or update the organization secrets used by this workflow
 
