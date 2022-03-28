@@ -17,7 +17,7 @@ jobs:
         uses: machine-learning-apps/actions-app-token@0.21
         with:
           APP_PEM: ${{ secrets.APP_PRIVATE_KEY }}
-          APP_ID: ${{ secrets.MY_SECRET-TOKEN }}
+          APP_ID: ${{ secrets.APP_ID }}
 
       # Check out a private action to parse the issue body
       - name: Checkout the issue parser action
